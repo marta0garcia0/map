@@ -1,0 +1,61 @@
+@import '../../styles/colors.scss', '../../styles/sizes.scss';
+.inputbox-container {
+	position: absolute;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  margin: $big-space;
+	background-color: $background-color;
+	border-radius: $small-space;
+	box-shadow: $shadow-component-color;
+	div {
+		margin: $medium-space;
+		display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+	}
+
+	img {
+		margin-right: $small-space;
+		justify-self: top;
+	}
+
+	a {
+		cursor: pointer;
+		height: $xlbig-space;
+		line-height: $xlbig-space;
+		border-radius: $xssmall-space;
+		box-shadow: $shadow-blue-color;
+		justify-self: top;
+		border: none;
+		outline: none;
+		color: $button-font-color;
+		font-size: $medium-space;
+		font-weight: 900;
+		width: calc(100% - 32px);
+		margin-left: $big-space;
+		text-align: center;
+		background-image: linear-gradient(to right, $main-color 0%, $secondary-color 51%, $main-color 100%);
+		opacity: 50%;
+		pointer-events: none;
+	}
+	a.active {
+		opacity: 100%;
+		pointer-events: auto;
+	}
+
+	input {
+		font-family: 'Roboto';
+		font-size: $medium-space;
+		min-width: 280px;
+		justify-self: top;
+    line-height: $big-space;
+		border: none;
+		outline: none;
+		color: $main-font-color;
+	}
+
+	input {
+		height: $big-space;
+	}
+}

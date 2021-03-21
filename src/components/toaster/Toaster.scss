@@ -1,0 +1,30 @@
+@import '../../styles/colors.scss', '../../styles/sizes.scss';
+.toaster-container {
+	position: absolute;
+	top: 236px;
+	display: none;
+  z-index: 1;
+	border-radius: $small-space;
+	height: $xlbig-space;
+	line-height: $xlbig-space;
+	background: $dark-backgroune-color;
+	box-shadow: $shadow-component-color;
+  align-items: center;
+	color: $button-font-color;
+  justify-content: center;
+	padding: 0 $medium-space;
+	margin-left: $big-space;
+	font-size: $medium-space;
+	cursor: pointer;
+}
+
+.toaster-container.active {
+	display: block;
+}
+@media (min-width: 700px) {
+	.toaster-container {
+		position: absolute;
+		top: $big-space;
+		right: $big-space;
+	}
+}
