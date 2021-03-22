@@ -104,7 +104,7 @@ const InputBox = (props) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dropOffFetch.error, dropOffFetch.data, destiny.dropOff]);
 
-	async function onInputChange(e, isPickUp) {
+	function onInputChange(e, isPickUp) {
 		if (isPickUp) {
 			if (e.target.value !== origin.pickUp) {
 				setOrigin({...origin, logoOrigin: originLogo, originValid: false, pickUpText: e.target.value});
