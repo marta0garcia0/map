@@ -19,7 +19,8 @@ Aditional
 - [ ] Submit the form on enter key
 - [ ] Unittesting
 - [ ] Store the list of jobs for the user to look up or edit later
-
+- [ ] Toggable inputbox, so the user can choose a "whole screen"
+- [ ] Add typescript to use a type in the inputbox state to make origin and destiny variables safe with a type
 
 
 # Getting Started with Create React App
